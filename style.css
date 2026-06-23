@@ -1,0 +1,404 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing:border-box;
+}
+body{
+    background-color:#fbf7e1;
+    font-family: 'DM Sans', sans-serif;
+}
+h1{
+   font-family: "Fredericka the Great", serif;
+}
+.nav-bar{
+    display:flex;
+    position: fixed;
+    height: 80px;
+    top: 0;
+   font-weight:600;
+    background-color:#2D1801;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.nav-bar img{
+    margin-left: 80px;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-left:700px;
+
+}
+.nav-bar ul li{
+   padding:10px 20px;
+   font-weight:600;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color:rgb(241, 240, 226);
+    position:relative;
+    transition:color 0.3s ease;
+}
+.nav-bar ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+.nav-bar ul li a:hover::after{
+    width: 100%;
+}
+.nav-bar ul li a:hover{
+    color:#f5f2eb;
+}
+.main-container{
+    margin-top: -100px;
+    flex: 1;
+  
+}
+.main-container h1{
+    text-align: center;
+    font-size: 128px;
+    color: #000000;
+    font-weight: 300;
+padding-top:200px;
+
+}
+.main-container h6{
+    text-align: center;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 300;
+
+}
+.header-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-80px;
+}
+#side-image{
+    width:284px;
+    height:256px;
+    animation: pop 1.5s ease-in-out infinite;
+}
+@keyframes pop{
+    0%,100%{
+        tranform: scale(1);
+
+    }
+    50%{
+        transform:scale(1.2);
+    }
+}
+#main-image{
+    width: 719px;
+    height: 719px;
+    
+}
+
+.all-cookies{
+
+    background-color: #000000;
+    color:#ffffff;
+    border-radius: 30px;
+    width:325.5px;
+    height: 69px;
+    font-size: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 11px;
+    padding-top: 8px;
+    margin-left:450px;
+    cursor: pointer;
+    transition:all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    
+}
+.all-cookies::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left: -100px;
+    width:100%;
+    background:#ffffff;
+    transition:all 0.3s ease;
+    z-index:0;
+}
+.all-cookies:hover::before{
+    left:0;
+}
+.all-cookies span{
+    position:relative;
+    z-index: 1;
+    transition: color 0.2 ease;
+}
+.all-cookies:hover span{
+    color: #000000;
+}
+.all-cookies:hover{
+    transform:scale(1.05)rotate(-2deg);
+    box-shadow:0 6px 16px rgba(0,0,0,0.3);
+}
+.rectangle{
+    width: 1531.41px;
+    height:64.44px;
+    background-color: #2D1801;
+    rotate:-5deg;
+    margin-left: -70px;
+    margin-top: 30px;
+    
+}
+.rectangle ul{
+    list-style-type: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    font-size: 32px;
+     font-family: 'Fredericka the Great', cursive;
+
+}
+.our-specials{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.specials-header{
+    display:flex;
+    justify-content: space-between;
+}
+.specials-header h2{
+    font-size: 64px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight:300;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    
+}
+#first-content{
+    margin-top: -800px;
+}
+
+.content img{
+    width: 500px;
+    height: 500px;
+    animation: spin 6s linear infinite;
+}
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+.text-content{
+    margin-top: 100px;
+    margin-left:50px;
+}
+.text-content h2{
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+}
+.text-content p{
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+.text-content button{
+    margin-top: 40px;
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 80px;
+}
+#shopnow{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+     cursor: pointer;
+    transition:all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+#shopnow::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left: -100px;
+    width:100%;
+    background:#ffffff;
+    transition:all 0.3s ease;
+    z-index:0;
+}
+#shopnow:hover::before{
+    left:0;
+}
+#shopnow span{
+    position:relative;
+    z-index: 1;
+    transition: color 0.2 ease;
+}
+#shopnow:hover span{
+    color: #000000;
+}
+#shopnow:hover{
+    
+    box-shadow:0 6px 26px rgba(0,0,0,0.3);
+}
+#favorite {
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition:all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+#favorite img{
+   width: 20px;
+    height: 20px;
+    
+
+}
+#favorite::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left: -100px;
+    width:100%;
+    background:#ffffff;
+    transition:all 0.3s ease;
+    z-index:0;
+}
+#favorite:hover::before{
+    left:0;
+}
+#favorite span{
+    position:relative;
+    z-index: 1;
+    transition: color 0.2 ease;
+}
+#favorite:hover span{
+    color: #000000;
+}
+#favorite:hover{
+    
+    box-shadow:0 6px 26px rgba(0,0,0,0.3);
+}
+#vector-one{
+    margin-top:-100px;
+    margin-left: 400px;
+}
+#third-content{
+    margin-top: -500px;
+}
+.testimonials{
+    margin:200px 150px
+    
+}
+.testimonials-header{
+    display:flex;
+    justify-content: space-between;
+
+}
+.testimonials-header h2{
+    font-size: 42px;
+    font-family:'Fredericka the Great', cursive;
+    font-weight: 300;
+    margin-left:50px;
+}
+.testimonials-header img{
+    width: 150px;
+    height: 150px;
+}
+.testimonials-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.testimonial{
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 350px;
+    padding: 40px;
+}
+.testimonial img{
+    width: 70px;
+}
+.testimonial h5{
+    margin-top: -50px;
+    margin-left: 80px;
+    font-size: 20px;
+}
+.testimonial p{
+    margin-top:50px;
+}
+footer{
+    background-color: #2D1801;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    height: 400px;
+
+  
+    
+}
+footer img{
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 80px;
+    
+}
+.contents{
+    color: #ffffff;
+    display: flex;
+    margin-left:440px;
+
+}
+
+.contents img{
+    width: 30px;
+    height: 30px;
+
+
+}
+.contents h6{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 110px;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 440px;
+   
+}
+footer ul img{
+    width: 20px;
+    height: 20px;
+}
+
